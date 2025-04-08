@@ -37,24 +37,6 @@ pip install opencv-python
 
 ## Usage
 
-There are three ways to run the logger:
-
-1. Direct Python execution:
-```bash
-python log_access.py
-```
-
-2. Using the batch file:
-```bash
-hide_terminal.bat
-```
-
-3. Silent mode using VBScript (recommended):
-- Double click on `run_hidden.vbs`
-- The script will run in the background without showing any terminal window
-
-## Task Scheduler Setup
-
 To run the logger automatically on system startup or at specific times, you can use Windows Task Scheduler:
 
 1. Open Task Scheduler (Press Win + R, type `taskschd.msc`, and press Enter)
