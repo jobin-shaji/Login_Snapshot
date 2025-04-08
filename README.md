@@ -1,4 +1,4 @@
-# Camera Access Logger
+# System Access Logger
 
 A Python-based system that captures images from a webcam and logs access times, useful for security monitoring and access tracking.
 
