@@ -1,9 +1,9 @@
-# # Ignore files in log directory
-# log/*.jpg
-# log/*.jpeg
-# log/*.png
-# log/*.log
-# log/access_log.txt
+# Ignore files in log directory
+log/*.jpg
+log/*.jpeg
+log/*.png
+log/*.log
+log/access_log.txt
 
-# # Keep the log folder structure
-# !log/.gitkeep
+# Keep the log folder structure
+!log/.gitkeep
