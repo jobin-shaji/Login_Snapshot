@@ -53,6 +53,37 @@ hide_terminal.bat
 - Double click on `run_hidden.vbs`
 - The script will run in the background without showing any terminal window
 
+## Task Scheduler Setup
+
+To run the logger automatically on system startup or at specific times, you can use Windows Task Scheduler:
+
+1. Open Task Scheduler (Press Win + R, type `taskschd.msc`, and press Enter)
+2. Click "Create Basic Task" in the right panel
+3. Name and Description:
+   - Name: "A custom name" (Camera Access Logger)
+   - Description: "Runs the camera access logging system"
+   - Click "Next"
+4. Trigger Selection:
+   - Choose when you want the task to start:
+     - "When the computer starts / When the log on" for automatic startup
+     - Click "Next"
+5. Action Setup:
+   - Select "Start a program"
+   - Click "Next"
+6. Program Details:
+   - Program/script: Browse and select the `run_hidden.vbs` file
+   - Start in: Enter the full path to your project folder
+   - Click "Next"
+7. Review the settings and click "Finish"
+8. Additional Settings (Optional):
+   - Right-click the created task and select "Properties"
+   - In the "General" tab:
+     - Select "Run whether user is logged on or not"
+     - Check "Run with highest privileges"
+   - Click "OK" to save changes
+
+Note: Make sure the account running the task has appropriate permissions to access the webcam and write to the log directory.
+
 ## Output
 
 - Images are saved in the `log` directory with timestamp-based filenames (format: `picYYYY-MM-DD_HH-MM-SS.jpg`)
